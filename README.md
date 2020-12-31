@@ -23,5 +23,6 @@ from PyQt5.QtCore import Qt
 ### 한국 코로나 현황 사이트(request) : https://www.worldometers.info/coronavirus/country/south-korea/
 
 ### 결과화면 
+<img width="273" alt="corona_result" src="https://user-images.githubusercontent.com/69226719/103399903-8ab8cd80-4b86-11eb-876f-6781f2df3c6c.PNG">
 
 
