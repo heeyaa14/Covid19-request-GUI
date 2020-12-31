@@ -1,9 +1,15 @@
 # Covid19-request-GUI
 
+### 결과화면 (12/31일자 집계)
+<img width="273" alt="corona_result" src="https://user-images.githubusercontent.com/69226719/103399903-8ab8cd80-4b86-11eb-876f-6781f2df3c6c.PNG">
+
 ### 라이브러리
 - Pyinstaller
 ```
-pip install pyinstaller
+1. pip install pyinstaller
+2. pyinstaller corona.py(exe파일로 만들 py파일명)
+3. dist폴더 생성
+4. dist폴더 안에 생성된 corona.exe 실행 
 ```
 - BeautifulSoup
 ```
@@ -22,7 +28,6 @@ from PyQt5.QtCore import Qt
 
 ### 한국 코로나 현황 사이트(request) : https://www.worldometers.info/coronavirus/country/south-korea/
 
-### 결과화면 
-<img width="273" alt="corona_result" src="https://user-images.githubusercontent.com/69226719/103399903-8ab8cd80-4b86-11eb-876f-6781f2df3c6c.PNG">
+
 
 
