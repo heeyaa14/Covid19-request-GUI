@@ -51,11 +51,11 @@ class CORONA(QWidget):
         corona_status = self.parseHTML()
 
         case_number_label.setText(
-            case_number_label.text() + corona_status[0] + "명")
+            case_number_label.text() + corona_status[0] + "명")  # 확진자 수
         death_count_label.setText(
-            death_count_label.text() + corona_status[1] + "명")
+            death_count_label.text() + corona_status[1] + "명")  # 사망자 수
         recovered_label.setText(
-            recovered_label.text() + corona_status[2] + "명")
+            recovered_label.text() + corona_status[2] + "명")    # 격리해제 수
         last_update_label.setText(corona_status[3])
 
         # add labels to widgets
@@ -73,6 +73,7 @@ class CORONA(QWidget):
     def parseHTML(self):
         corona_status = []
 
+        # 요청받아온 url
         req = requests.get(
             "https://www.worldometers.info/coronavirus/country/south-korea/"
         )
@@ -83,7 +84,7 @@ class CORONA(QWidget):
         numbers = soup.select("div.maincounter-number > span")
 
         for txt in numbers:
-            corona_status.append(txt.text.strip(" "))
+            corona_status.append(txt.text.strip(" "))   # 띄어쓰기 해제
 
         corona_status.append(last_update[0])
 
