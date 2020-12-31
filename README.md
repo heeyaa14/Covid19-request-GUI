@@ -8,7 +8,7 @@
 ```
 1. pip install pyinstaller
 2. pyinstaller corona.py(exe파일로 만들 py파일명)
-3. dist폴더 생성
+3. 설치완료 후 dist폴더 생성되어있는지 확인
 4. dist폴더 안에 생성된 corona.exe 실행 
 ```
 - BeautifulSoup
